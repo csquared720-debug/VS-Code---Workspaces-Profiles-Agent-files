@@ -1,0 +1,56 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "Go Project"
+    }
+  ],
+  "settings": {
+    "go.useLanguageServer": true,
+    "gopls": {
+      "formatting.gofumpt": true,
+      "ui.semanticTokens": true,
+      "ui.diagnostic.analyses": {
+        "unusedparams": true,
+        "nilness": true,
+        "unusedvariable": true,
+        "unusedwrite": true
+      }
+    },
+    "go.formatTool": "gofmt",
+    "go.lintTool": "golangci-lint",
+    "go.testFlags": ["-count=1"],
+    "go.toolsManagement.autoUpdate": true,
+    "go.buildOnSave": "workspace",
+    "go.testOnSave": false,
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go",
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.exclude": {
+      "**/.git": true,
+      "**/node_modules": true,
+      "**/vendor": false
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/vendor": false,
+      "**/bin": true,
+      "**/obj": true
+    },
+    "go.testExplorer.enable": true
+  },
+  "extensions": {
+    "recommendations": [
+      "golang.go",
+      "redhat.vscode-xml",
+      "SonarSource.sonarlint-vscode",
+      "streetsidesoftware.code-spell-checker",
+      "GitHub.copilot",
+      "GitHub.copilot-chat"
+    ]
+  }
+}
