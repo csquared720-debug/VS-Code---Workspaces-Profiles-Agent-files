@@ -41,7 +41,10 @@
       "**/bin": true,
       "**/obj": true
     },
-    "go.testExplorer.enable": true
+    "go.testExplorer.enable": true,
+    "chat.tools.terminal.autoApprove": {
+      "Set-Location": true
+    }
   },
   "extensions": {
     "recommendations": [
